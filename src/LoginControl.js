@@ -1,8 +1,9 @@
 import React,{Component} from "react";
+import Clock from "./Clock";
 
 
 function UserGreeting(props) {
-    return <h1>Welcome back!</h1>;
+    return <Clock/>;
 }
 
 function GuestGreeting(props) {
@@ -12,7 +13,9 @@ function GuestGreeting(props) {
 function Greeting(props) {
     const isLoggedIn = props.isLoggedIn;
     if (isLoggedIn) {
-        return <UserGreeting />;
+        return (
+            <UserGreeting />
+        );
     }
     return <GuestGreeting />;
 }
