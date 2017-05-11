@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
-//import Clock from "./Clock";
-import Toggle from './Toggle';
-import Calculator from './Calculator';
+import FilterableProductTable from "./FilterUI/FilterableProductTable";
+
 
 class App extends Component{
     render() {
         return (
             <div>
-                <Calculator />
-
-                <Toggle/>
+                <FilterableProductTable/>
             </div>
         );
     };
