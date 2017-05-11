@@ -1,9 +1,16 @@
 import React,{Component} from "react";
 import Clock from "./Clock";
+import Mailbox from "./MailBox";
 
 
 function UserGreeting(props) {
-    return <Clock/>;
+    const messages = ['React', 'Re: React', 'Re:Re: React'];
+    return (
+        <div>
+            <Clock/>
+            <Mailbox unreadMessages={messages} />
+        </div>
+    );
 }
 
 function GuestGreeting(props) {
