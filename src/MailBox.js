@@ -1,4 +1,5 @@
 import React from 'react';
+import ListItems from "./ListItems";
 
 
 class Mailbox extends React.Component {
@@ -12,6 +13,8 @@ class Mailbox extends React.Component {
                     You have {unreadMessages.length} unread messages.
                 </h2>
                 }
+
+                <ListItems  items={unreadMessages}/>
             </div>
         );
     };

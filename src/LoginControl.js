@@ -1,6 +1,7 @@
 import React,{Component} from "react";
 import Clock from "./Clock";
 import Mailbox from "./MailBox";
+import NameForm from "./NameForm";
 
 
 function UserGreeting(props) {
@@ -14,7 +15,12 @@ function UserGreeting(props) {
 }
 
 function GuestGreeting(props) {
-    return <h1>Please sign up.</h1>;
+    return (
+        <div>
+            <h1>Please sign up.</h1>
+            <NameForm />
+        </div>
+    );
 }
 
 function Greeting(props) {
