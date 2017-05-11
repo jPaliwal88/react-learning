@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import Clock from "./Clock";
+//import Clock from "./Clock";
 import Toggle from './Toggle';
+import Calculator from './Calculator';
 
 class App extends Component{
     render() {
         return (
             <div>
-                <Clock/>
+                <Calculator />
+
                 <Toggle/>
             </div>
         );
